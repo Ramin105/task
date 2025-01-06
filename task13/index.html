@@ -1,0 +1,51 @@
+<!-- API ilə Təkmilləşdirilmiş Todo List** Task: Todo list tətbiqinə API inteqrasiyası
+ əlavə et. - JSONPlaceholder API-dən `/todos` endpoint-dən məlumat çək və todo
+ siyahısını doldur. - Hər bir todo üçün tamamlanma düyməsi əlavə et. Bu düymə
+ basıldıqda, statusu "tamamlanmış" olsun. Bonus: Todo-ları əlavə et və silmək üçün API
+ ilə POST və DELETE əməliyyatlarını qur. -->
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+
+        .delete-btn {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Todo List</h1>
+    <ul id="todo-list"></ul>
+
+    <h2>Yeni Todo Əlavə et</h2>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Yeni todo daxil et" required>
+        <button type="submit">Əlavə et</button>
+    </form>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

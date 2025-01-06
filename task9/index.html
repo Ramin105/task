@@ -1,0 +1,56 @@
+<!-- JSONPlaceholder API-dən `/posts` endpoint-dən məlumat çək və bir səhifədə yalnız 5
+post göstər. Bonus: "Next" və "Previous" düymələri əlavə et. Bu düymələr vasitəsilə
+istifadəçi səhifələr arasında keçid edə bilsin. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .pagination button:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="posts-container"></div>
+    <div class="pagination">
+        <button id="previous" disabled>Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

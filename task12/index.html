@@ -1,0 +1,66 @@
+<!-- JSONPlaceholder API-dən `/posts` endpoint-dən məlumat çək və hər 30 saniyədən bir
+avtomatik yenilə. Bonus: Yenilənən məlumatlar içində dəyişiklik varsa, yalnız
+dəyişənləri yenilə və istifadəçiyə "Data updated" mesajı göstər. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        #updateMessage {
+            text-align: center;
+            color: green;
+            font-size: 18px;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Posts</h1>
+    <ul id="postList">
+
+    </ul>
+    <p id="updateMessage">Data updated</p>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

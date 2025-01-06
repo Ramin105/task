@@ -1,0 +1,57 @@
+<!-- Google Places API (və ya JSONPlaceholder `/users`) ilə bir autocomplete funksiyası
+qur. İstifadəçi `input`-a yazdıqca uyğun gələn nəticələr təklif kimi göstərilsin.
+ Bonus: Təkliflərdən birini seçdikdə həmin məlumatla form doldurulsun. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .offered {
+
+            max-height: 200px;
+            overflow-y: auto;
+            position: absolute;
+            width: 100%;
+            background: white;
+        }
+
+        .offered div {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .offered div:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Autocomplete Example</h1>
+    <label for="user-search">Search Users:</label>
+    <input type="text" id="user-search" autocomplete="off" placeholder="Type a username...">
+    <div class="offered"></div>
+
+    <h2>Selected User Information</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" readonly><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" readonly><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" readonly><br><br>
+
+        <label for="website">Website:</label>
+        <input type="text" id="website" readonly><br><br>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

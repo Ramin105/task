@@ -1,0 +1,39 @@
+<!-- DOM Manipulyasiyası** Task: Bir düyməyə basıldığında rəngi dəyişən bir div yarat. 
+HTML-də bir `div` və bir `button` yarat. - `div` elementinin rəngi başlanğıcda
+ qırmızı olsun. - `button`-a basıldıqda, `div` rəngi yaşıl olmalıdır. - İkinci dəfə
+ basıldıqda isə yenidən qırmızıya qayıtsın. Bonus: Bu davranışı JavaScript-də
+ `addEventListener` ilə yaz. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        button {
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="box"></div>
+    <button class="togglebutton">Yaşıl et</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

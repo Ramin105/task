@@ -1,0 +1,97 @@
+<!-- Timer Funksiyası** Task: Bir timer funksiyası qur və istifadəçiyə saniyə saydır. 
+HTML-də bir `button` və bir `p` elementi yarat. - `button`-a basıldıqda, `p`
+ elementində saniyə göstəricisi artırmağa başlasın. - Başqa bir düyməyə basıldıqda isə
+ timer dayansın. Bonus: Timer dayandıqdan sonra sıfırlama düyməsi əlavə et. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .resetButton {
+            display: none;
+        }
+
+        .timer p {
+            font-size: 150px;
+            color: white;
+            margin: 0;
+        }
+
+        .show {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .divButton {
+            display: flex;
+            gap: 10px;
+        }
+
+        .timer {
+            background-color: #000;
+            height: 150px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 5px gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .startButton {
+            margin: 5px;
+            background-color: green;
+            color: white;
+        }
+
+        .stopButton {
+            margin: 5px;
+            background-color: red;
+            color: white;
+        }
+
+        .resetButton {
+            margin: 5px;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="show">
+        <div class="timer">
+            <p class="timeCounter">0:00:00</p>
+        </div>
+        <div class="divButton">
+            <button class="startButton">Start</button>
+            <button class="stopButton">Stop</button>
+            <button class="resetButton">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

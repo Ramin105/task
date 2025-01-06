@@ -1,0 +1,23 @@
+<!-- Bir `input` sahəsi əlavə et. İstifadəçi `input`-a yazdıqca, JSONPlaceholder API-dən
+`/users` endpoint-ə sorğu göndər və daxil edilmiş ada uyğun istifadəçiləri göstər.
+Bonus: Hər dəfə yazılan hərflə sorğu göndərmək əvəzinə, `debounce` funksiyasından
+istifadə et. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>User Search</h1>
+    <input type="text" class="userInput" placeholder="Search for a user" oninput="handleInput(event)">
+    <ul class="userList"></ul>
+    <script src="script.js"></script>
+</body>
+
+</html>

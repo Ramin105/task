@@ -1,0 +1,53 @@
+<!-- Todo List Tətbiqi** Task: Bir todo list tətbiqi qur. - HTML-də bir `input`, bir
+`button` və boş bir `ul` elementi olsun. - İstifadəçi `input`-a bir mətn yazıb
+`button`-a basanda, həmin mətn `ul`-da yeni bir `li` elementi olaraq əlavə edilsin. 
+Hər bir `li` elementinin yanında bir "Sil" düyməsi olsun. Bonus: - Hər bir `li`-yə
+basıldıqda onun tamamlanmış olduğunu göstərmək üçün üzərindən xətt çəkilsin. 
+LocalStorage istifadə edərək siyahını yadda saxla ki, səhifə yenilənsə belə, siyahı
+itməsin. -->
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li.completed {
+            text-decoration: line-through;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Todo List</h1>
+    <input type="text" class="todoInput" placeholder="Yeni iş əlavə et">
+    <button class="addButton">Əlavə et</button>
+    <ul class="todoList"></ul>
+    <script src="script.js"></script>
+</body>
+
+</html>

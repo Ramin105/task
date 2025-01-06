@@ -1,0 +1,23 @@
+<!-- JSONPlaceholder API-dən `/posts` endpoint-dən məlumat çək və yalnız `userId: 1` olan
+postları göstər. Bonus: İstifadəçi `userId`-ni bir `input`-dan daxil edə bilsin və
+həmin `userId`-yə uyğun postları göstər. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Filter Posts by User ID</h1>
+    <input type="number" class="userIdInput" placeholder="Enter User ID">
+    <button onclick="fetchPosts()">Get Posts</button>
+    <div class="posts"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
