@@ -7,6 +7,9 @@ let todos = JSON.parse(localStorage.getItem("todos")) || [];
 function renderTodos() {
   todoList.innerHTML = "";
   todos.forEach((todo, index) => {
+    const todoContainer = document.createElement("div");
+    todoContainer.classList.add("todo-container");
+
     const li = document.createElement("li");
     li.textContent = todo.text;
     if (todo.completed) {
@@ -14,12 +17,17 @@ function renderTodos() {
     }
 
     li.addEventListener("click", () => toggleComplete(index));
+
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Sil";
-    deleteButton.addEventListener("click", () => deleteTodo(index));
+    deleteButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      deleteTodo(index);
+    });
 
-    li.appendChild(deleteButton);
-    todoList.appendChild(li);
+    todoContainer.appendChild(li);
+    todoContainer.appendChild(deleteButton);
+    todoList.appendChild(todoContainer);
   });
 }
 

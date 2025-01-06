@@ -14,7 +14,6 @@ itməsin. -->
     <title>Document</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 20px;
         }
 
@@ -23,11 +22,16 @@ itməsin. -->
             padding: 0;
         }
 
-        li {
-            margin: 5px 0;
+        .todo-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        li {
+            flex-grow: 1;
+            margin: 5px 0;
         }
 
         li.completed {
